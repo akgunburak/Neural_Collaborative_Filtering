@@ -1,23 +1,20 @@
-# Neural Collaborative Filtering - Omer Burak Akgun
+# Neural Collaborative Filtering
 
-&nbsp; 
-
-&nbsp; This project contains an implementation of 'Neural Collaborative Filtering' using Pytorch.
+This repo contains an implementation of 'Neural Collaborative Filtering' using Pytorch.
 
 &nbsp;  
 
 ## Scripts
 
-**config.py: ** All the algorithm settings.  
-**data_utils.py: ** Necessary classes and methods to create and preprocess datasets.  
-**model.py: ** Class for Neural Collaborative Filtering method. And also function to recommend items.  
-**evaluate.py: ** Functions for calculating 'Hit Ratio' and 'Normalized Discounted Cumulative Gain Ratio'.  
-**main.py: ** Main function that runs the algorithm.  
+**config.py:** All the algorithm settings.  
+**data_utils.py:** Necessary classes and methods to create and preprocess datasets.  
+**model.py:** Class for Neural Collaborative Filtering method. And also function to recommend items.  
+**evaluate.py:** Functions for calculating 'Hit Ratio' and 'Normalized Discounted Cumulative Gain Ratio'.  
+**main.py:** Main function that runs the algorithm.  
 
 &nbsp;  
 
 ## Dataset
-&nbsp;  
 MovieLens 1M Dataset is used. Files in dataset:
 &nbsp;   
 **[movies](data/movies.dat):** movie_id, title, genre  
@@ -29,7 +26,7 @@ MovieLens 1M Dataset is used. Files in dataset:
 &nbsp;  The model is a mixture of 'Matrix Factorization' and 'Multi Layer Perceptron' models. First part of the model (MF) is useful to capture linear relationships between users and items, while second part (MLP) is good at modelling non-lineer relationships. In this manner our scoring function is being a combination of MF and MLP algorithms.  
 &nbsp;  As a loss function, 'Binary Cross Entropy' is used as the feedbacks are converted into implicit feedback.  
 
-![](model.png)
+![](results/model.png)
 
 &nbsp;  
 
@@ -42,7 +39,7 @@ Related paper can be found  **[He et al. "Neural Collaborative Filtering" at WWW
 The training loss decreases from 0.274 to 0.133
 
 
-![](loss_graphs.png)
+![](results/loss_graphs.PNG)
 
 
 &nbsp;  **Best hyper-parameters:**  
@@ -53,14 +50,14 @@ The training loss decreases from 0.274 to 0.133
 
 &nbsp;  
 
-![](hparams_graph.png)
+![](results/hparams_graph.PNG)
 
 &nbsp;  
 
 &nbsp;  **Performance of the best model:**  
 - *HR-10*: 0.676158965  
 - *NDCG-10*: 0.402437598  
-![](performance_graph.png)
+![](results/performance_graph.PNG)
 
 &nbsp;  
 
