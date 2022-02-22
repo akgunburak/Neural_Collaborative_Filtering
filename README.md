@@ -68,5 +68,4 @@ The project can be run by first setting the parameters in the config.py file, an
 
 # Deployable Deficiencies
 &nbsp;  The model is potentially be suffered from so called 'cold start problem' which is a common problem in the field of recommendation systems This problem refers to lack of sufficient data related to users and items to buid a predictive model effectively. This problem widely occurs when a new product is released or company enters a new market.  
-&nbsp;  Potential solution for the cold start problem would be using hybrid approaches. According to structure of the market, content-based and collaborative filtering techniques can be mixed.
-
+&nbsp;  Potential solution for the cold start problem would be using hybrid approaches. Content-based and collaborative filtering techniques can be mixed by taking into account the structure of the market.
